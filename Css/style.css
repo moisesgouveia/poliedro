@@ -1,0 +1,66 @@
+.rowSpacing{
+    padding: 1%;
+}
+
+.imgTransition{
+    transition: 0.3s;
+}
+
+.imgTransition:hover{
+    transition: 0.3s;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.mainStyle{
+    background-color: #363636;
+}
+
+.contato{
+    background-color: #EEE9E9;
+    padding: 2%;
+}
+
+.listaUl{
+    /* margin-top: 30%; */
+    list-style-type:none;
+}
+
+.listaLi{
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+.typographyH3{
+    font-weight: bold;
+    text-align: center;
+    padding: 0%;
+}
+
+span{
+    font-weight: bold;
+}
+
+.footerStyle{
+    background-color: #363636;
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.formularioStyle{
+    background-color: #EEE9E9;
+}
+
+.inputStyle{
+    padding: 5px;
+}
+
+.buttonOrcamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
