@@ -1,23 +1,70 @@
+.navBar{
+    background-color: black;
+}
+
 .rowSpacing{
     padding: 1%;
 }
 
 .imgTransition{
     transition: 0.3s;
+    border-radius: 20px;
 }
 
 .imgTransition:hover{
+    position: relative;
     transition: 0.3s;
     padding: 1px;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 11px 14px 13px -9px rgba(0,0,0,0.35);
+}
+
+.imgEquipamentos{
+    width: 300px;
+    transition: 0.3s;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.imgEquipamentos:hover{
+    position: relative;
+    transition: 0.3s;
+    height: 350px;
+    width: 350px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cursor{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cursor:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.divEquipamentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.divEquipamentos:hover{
+    background-color:  #F8F8FF;
+    border-radius: 10px;
 }
 
 .mainStyle{
-    background-color: #363636;
+    background-color: white;
 }
 
 .contato{
-    background-color: #EEE9E9;
+    background-color: #242626;
+    color: white;
     padding: 2%;
 }
 
@@ -42,17 +89,27 @@ span{
 }
 
 .footerStyle{
-    background-color: #363636;
+    background-color: black;
     width: 100%;
     height: 50px;
     color: white;
-    text-align: left;
-    font-weight: bold;
     padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .formularioStyle{
     background-color: #EEE9E9;
+}
+
+.EquipamentoStyle{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-black{
+    background-color: #242626;
 }
 
 .inputStyle{
@@ -63,4 +120,15 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icone{
+    height: 80px;
+    width: 80px;
+}
+
+.label{
+    align-items: center;
+    display: flex;
+    font-size: 18px;
 }
