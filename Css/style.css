@@ -132,3 +132,25 @@ span{
     display: flex;
     font-size: 18px;
 }
+
+.imgInfo{
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px;
+    width: 120px;
+    height: 120px;
+}
+
+.imgInfo:hover{
+    transition: 0.3s;
+    margin: 10px;
+    background-color:  #F8F8FF;
+    border-radius: 10px;
+}
+
+.divEquipamentosInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
