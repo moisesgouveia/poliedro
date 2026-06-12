@@ -406,8 +406,9 @@ Hero section
 .owl-item.active .hs-item p,
 .owl-item.active .hs-item .site-btn,
 .owl-item.active .hs-item .site-btn.sb-c2 {
-	top: 0;
-	opacity: 1;
+	top: 0 !important;
+	opacity: 1 !important;
+	visibility: visible !important;
 }
 
 .owl-item.active .hs-item img {

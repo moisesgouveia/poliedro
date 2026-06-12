@@ -50,8 +50,6 @@ $(window).on('load', function() {
 		nav: false,
 		dots: true,
 		mouseDrag: false,
-		animateOut: 'fadeOut',
-		animateIn: 'fadeIn',
 		items: 1,
 		autoplay: true,
 		autoplayTimeout: 5000,
