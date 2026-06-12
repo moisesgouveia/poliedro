@@ -1866,3 +1866,37 @@ Responsive
 	overflow: visible;
 }
 
+/* Success Message */
+.success-message {
+	padding: 40px 20px;
+	background: linear-gradient(135deg, #08192d 0%, #0f2a52 100%);
+	border-left: 4px solid #fc0254;
+	margin-bottom: 30px;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(252, 2, 84, 0.2);
+	text-align: center;
+	animation: slideIn 0.5s ease-out;
+}
+.success-content h3 {
+	color: #fc0254;
+	font-size: 28px;
+	margin-bottom: 15px;
+	font-weight: 700;
+}
+.success-content p {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 10px 0;
+}
+@keyframes slideIn {
+	from {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
