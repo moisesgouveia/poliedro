@@ -62,23 +62,169 @@
 
 	<section class="blog-section spad">
 		<div class="container">
-			<form class="contact-from">
+			<form class="contact-from" action="https://formspree.io/f/xwvjwevb" method="POST">
 				<div class="row">
 					<div class="col-md-6">
-						<input type="text" placeholder="Nome completo" >
+						<input type="text" name="nome" placeholder="Nome completo" required>
 					</div>
 					<div class="col-md-6">
-						<input type="email" placeholder="Endereço de e-mail" >
+						<input type="email" name="email" placeholder="Endereço de e-mail" required>
 					</div>
 					<div class="col-md-6">
-						<input type="tel" placeholder="Telefone" >
+						<input type="tel" name="telefone" placeholder="Telefone" required>
 					</div>
 					<div class="col-md-6">
-						<input type="text" placeholder="CPF/CNPJ" >
+						<input type="text" name="cpf_cnpj" placeholder="CPF/CNPJ" required>
 					</div>
 					<div class="col-md-12">
-						<input type="text" placeholder="Empresa / Agência / Produtora" >
+						<input type="text" name="empresa" placeholder="Empresa / Agência / Produtora" required>
 					</div>
+					<div class="col-md-12" style="margin-top:20px; margin-bottom: 20px;">
+						<div class="row">
+							<div class="col-md-12" style="text-align: center;">
+								<label>Selecione os equipamentos abaixo</label>
+							</div>
+							<div class="col-md-6" id="selectProd">
+								<select name="equipamento_1" required>
+									<option disabled selected style="font-weight: bold;" >Escolha o equipamento</option>
+									
+									<option disabled style="font-weight: bold;">Câmeras</option>
+									<option value="BLACKMAGIC POCKET">BLACKMAGIC POCKET</option>
+									<option value="C300 MK1">C300 MK1</option>
+									<option value="C300 MK2">C300 MK2</option>
+									<option value="CANON 5D MK II">CANON 5D MK II</option>
+									<option value="CANON 5D MK III">CANON 5D MK III</option>
+
+									<option disabled style="font-weight: bold;">Drones</option>
+									<option value="MAVIC PRO 2">MAVIC PRO 2</option>
+									<option value="PHANTOM 4 PRO">PHANTOM 4 PRO</option>
+
+									<option disabled style="font-weight: bold;">Lentes</option>
+									<option value="14MM">14MM</option>
+									<option value="18-80MM">18-80MM</option>
+									<option value="24-105MM">24-105MM</option>
+									<option value="50MM">50MM</option>
+									<option value="70-200MM">70-200MM</option>
+									<option value="85MM">85MM</option>
+
+									<option disabled style="font-weight: bold;">Logagem</option>
+									<option value="HD 1TB SEAGATE">HD 1TB SEAGATE</option>
+									<option value="MACBOOK">MACBOOK</option>
+
+									<option disabled style="font-weight: bold;">Iluminação</option>
+									<option value="LED">LED</option>
+
+									<option disabled style="font-weight: bold;">Tripé</option>
+									<option value="MONOPÉ MANFROTTO">MONOPÉ MANFROTTO</option>
+									<option value="TRIPÉ BENRO">TRIPÉ BENRO</option>
+									<option value="TRIPÉ MANFROTTO">TRIPÉ MANFROTTO</option>
+									<option value="TRIPÉ SACHTLER">TRIPÉ SACHTLER</option>
+								</select>
+							</div>
+							<div  class="col-md-6">
+								<input type="number" name="quantidade_1" placeholder="Quantidade" required>
+							</div>
+							<div class="col-md-6">
+								<select name="equipamento_2">
+									<option disabled selected style="font-weight: bold;" >Escolha o equipamento</option>
+									
+									<option disabled style="font-weight: bold;">Câmeras</option>
+									<option value="BLACKMAGIC POCKET">BLACKMAGIC POCKET</option>
+									<option value="C300 MK1">C300 MK1</option>
+									<option value="C300 MK2">C300 MK2</option>
+									<option value="CANON 5D MK II">CANON 5D MK II</option>
+									<option value="CANON 5D MK III">CANON 5D MK III</option>
+
+									<option disabled style="font-weight: bold;">Drones</option>
+									<option value="MAVIC PRO 2">MAVIC PRO 2</option>
+									<option value="PHANTOM 4 PRO">PHANTOM 4 PRO</option>
+
+									<option disabled style="font-weight: bold;">Lentes</option>
+									<option value="14MM">14MM</option>
+									<option value="18-80MM">18-80MM</option>
+									<option value="24-105MM">24-105MM</option>
+									<option value="50MM">50MM</option>
+									<option value="70-200MM">70-200MM</option>
+									<option value="85MM">85MM</option>
+
+									<option disabled style="font-weight: bold;">Logagem</option>
+									<option value="HD 1TB SEAGATE">HD 1TB SEAGATE</option>
+									<option value="MACBOOK">MACBOOK</option>
+
+									<option disabled style="font-weight: bold;">Iluminação</option>
+									<option value="LED">LED</option>
+
+									<option disabled style="font-weight: bold;">Tripé</option>
+									<option value="MONOPÉ MANFROTTO">MONOPÉ MANFROTTO</option>
+									<option value="TRIPÉ BENRO">TRIPÉ BENRO</option>
+									<option value="TRIPÉ MANFROTTO">TRIPÉ MANFROTTO</option>
+									<option value="TRIPÉ SACHTLER">TRIPÉ SACHTLER</option>
+								</select>
+							</div>
+							<div  class="col-md-6">
+								<input type="number" name="quantidade_2" placeholder="Quantidade">
+							</div>
+							<div class="col-md-6">
+								<select name="equipamento_3">
+									<option disabled selected style="font-weight: bold;" >Escolha o equipamento</option>
+									
+									<option disabled style="font-weight: bold;">Câmeras</option>
+									<option value="BLACKMAGIC POCKET">BLACKMAGIC POCKET</option>
+									<option value="C300 MK1">C300 MK1</option>
+									<option value="C300 MK2">C300 MK2</option>
+									<option value="CANON 5D MK II">CANON 5D MK II</option>
+									<option value="CANON 5D MK III">CANON 5D MK III</option>
+
+									<option disabled style="font-weight: bold;">Drones</option>
+									<option value="MAVIC PRO 2">MAVIC PRO 2</option>
+									<option value="PHANTOM 4 PRO">PHANTOM 4 PRO</option>
+
+									<option disabled style="font-weight: bold;">Lentes</option>
+									<option value="14MM">14MM</option>
+									<option value="18-80MM">18-80MM</option>
+									<option value="24-105MM">24-105MM</option>
+									<option value="50MM">50MM</option>
+									<option value="70-200MM">70-200MM</option>
+									<option value="85MM">85MM</option>
+
+									<option disabled style="font-weight: bold;">Logagem</option>
+									<option value="HD 1TB SEAGATE">HD 1TB SEAGATE</option>
+									<option value="MACBOOK">MACBOOK</option>
+
+									<option disabled style="font-weight: bold;">Iluminação</option>
+									<option value="LED">LED</option>
+
+									<option disabled style="font-weight: bold;">Tripé</option>
+									<option value="MONOPÉ MANFROTTO">MONOPÉ MANFROTTO</option>
+									<option value="TRIPÉ BENRO">TRIPÉ BENRO</option>
+									<option value="TRIPÉ MANFROTTO">TRIPÉ MANFROTTO</option>
+									<option value="TRIPÉ SACHTLER">TRIPÉ SACHTLER</option>
+								</select>
+							</div>
+							<div  class="col-md-6">
+								<input type="number" name="quantidade_3" placeholder="Quantidade">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<label>Informe o número de diárias</label>
+						<input type="number" name="diarias" placeholder="Ex: 1" required>
+					</div>
+					<div class="col-md-4">
+						<label>Data da retirada</label>
+						<input type="date" name="data_retirada" required>
+					</div>
+					<div class="col-md-4">
+						<label>Data da entrega</label>
+						<input type="date" name="data_entrega" required>
+					</div>
+					<div class="col-md-12">
+						<button type="submit" class="site-btn sb-c2">Finalizar Orçamento</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
 					<div class="col-md-12" style="margin-top:20px; margin-bottom: 20px;">
 						<div class="row">
 							<div class="col-md-12" style="text-align: center;">
@@ -208,15 +354,15 @@
 					</div>
 					<div class="col-md-4">
 						<label>Informe o número de diárias</label>
-						<input type="number" placeholder="Ex: 1" >
+						<input type="number" name="diarias" placeholder="Ex: 1" required>
 					</div>
 					<div class="col-md-4">
 						<label>Data da retirada</label>
-						<input type="date" >
+						<input type="date" name="data_retirada" required>
 					</div>
 					<div class="col-md-4">
 						<label>Data da entrega</label>
-						<input type="date" >
+						<input type="date" name="data_entrega" required>
 					</div>
 					<div class="col-md-12">
 						<a href="#" class="site-btn sb-c2">Finalizar Orçamento</a>
