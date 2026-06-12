@@ -53,7 +53,9 @@ $(window).on('load', function() {
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
 		items: 1,
-		autoplay: true
+		autoplay: true,
+		autoplayTimeout: 5000,
+		startPosition: 0
 	});
 
 })(jQuery);

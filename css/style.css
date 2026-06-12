@@ -401,6 +401,7 @@ Hero section
 }
 
 .owl-item.active .hs-item img,
+.owl-item.active .hs-item .hr-img img,
 .owl-item.active .hs-item h2,
 .owl-item.active .hs-item p,
 .owl-item.active .hs-item .site-btn,
