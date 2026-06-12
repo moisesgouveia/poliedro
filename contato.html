@@ -64,18 +64,18 @@
 							<li>(11) 97969-4064</li>
 							<li>expedicao@poliedrolocacao.com</li>
 						</ul>
-						<form class="contact-from">
-							<div class="row">
-								<div class="col-md-6">
-									<input type="text" placeholder="Nome completo" required>
-								</div>
-								<div class="col-md-6">
-									<input type="email" placeholder="Endereço de e-mail" required>
-								</div>
-								<div class="col-md-12">
-									<input type="text" placeholder="Título" required>
-									<textarea placeholder="Mensagem" required></textarea>
-									<button class="site-btn">Enviar Mensagem</button>
+							<form class="contact-from" action="https://formspree.io/f/xwvjwevb" method="POST">
+								<div class="row">
+									<div class="col-md-6">
+										<input type="text" name="name" placeholder="Nome completo" required>
+									</div>
+									<div class="col-md-6">
+										<input type="email" name="_replyto" placeholder="Endereço de e-mail" required>
+									</div>
+									<div class="col-md-12">
+										<input type="text" name="subject" placeholder="Título" required>
+										<textarea name="message" placeholder="Mensagem" required></textarea>
+										<button type="submit" class="site-btn">Enviar Mensagem</button>
 								</div>
 							</div>
 						</form>
