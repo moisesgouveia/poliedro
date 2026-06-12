@@ -12,6 +12,7 @@ window.addEventListener('load', () => {
 
   gsap.to(introLogo, {
     rotation: 720,
+    scale: 1.1,
     duration: 1.5,
     ease: 'power2.inOut',
     onComplete: moverParaOCanto
@@ -32,6 +33,7 @@ window.addEventListener('load', () => {
     });
 
     tl.to(preloader, { backgroundColor: 'rgba(8, 25, 45, 0)', duration: 1 }, 0)
-      .to(introLogo, { x: deltaX, y: deltaY, scale: escala, duration: 1, ease: 'power3.inOut' }, 0);
+      .to(introLogo, { x: deltaX, y: deltaY, scale: escala * 1.1, duration: 0.6, ease: 'power3.inOut' }, 0)
+      .to(introLogo, { scale: escala, duration: 0.4, ease: 'power3.out' }, 0.6);
   }
 });

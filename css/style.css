@@ -1667,9 +1667,11 @@ Responsive
 	align-items: center;
 	justify-content: center;
 	z-index: 99999;
+	overflow: hidden;
 }
 #preloader-logo {
-	width: 160px;
+	width: min(260px, 80vw);
+	max-width: 80vw;
 }
 	.sub-text {
 		margin-bottom: 50px;
