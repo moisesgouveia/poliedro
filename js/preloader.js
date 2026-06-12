@@ -10,30 +10,14 @@ window.addEventListener('load', () => {
 
   gsap.set(navLogo, { autoAlpha: 0 });
 
-  gsap.to(introLogo, {
-    rotation: 720,
-    scale: 1.1,
-    duration: 1.5,
-    ease: 'power2.inOut',
-    onComplete: moverParaOCanto
+  const tl = gsap.timeline({
+    onComplete: () => {
+      gsap.set(navLogo, { autoAlpha: 1 });
+      preloader.remove();
+    }
   });
 
-  function moverParaOCanto() {
-    const destino = navLogo.getBoundingClientRect();
-    const origem = introLogo.getBoundingClientRect();
-    const deltaX = (destino.left + destino.width / 2) - (origem.left + origem.width / 2);
-    const deltaY = (destino.top + destino.height / 2) - (origem.top + origem.height / 2);
-    const escala = destino.width / origem.width;
-
-    const tl = gsap.timeline({
-      onComplete: () => {
-        gsap.set(navLogo, { autoAlpha: 1 });
-        preloader.remove();
-      }
-    });
-
-    tl.to(preloader, { backgroundColor: 'rgba(8, 25, 45, 0)', duration: 1 }, 0)
-      .to(introLogo, { x: deltaX, y: deltaY, scale: escala * 1.1, duration: 0.6, ease: 'power3.inOut' }, 0)
-      .to(introLogo, { scale: escala, duration: 0.4, ease: 'power3.out' }, 0.6);
-  }
+  tl.to(introLogo, { scale: 1.15, duration: 0.6, ease: 'power2.out' }, 0)
+    .to(introLogo, { scale: 1, duration: 0.5, ease: 'power2.inOut' }, 0.6)
+    .to(preloader, { backgroundColor: 'rgba(8, 25, 45, 0)', duration: 0.8 }, 0.8);
 });
