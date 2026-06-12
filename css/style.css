@@ -1868,17 +1868,75 @@ Responsive
 	overflow: visible;
 }
 
-/* Success Message */
-.success-message {
-	padding: 40px 20px;
-	background: linear-gradient(135deg, #08192d 0%, #0f2a52 100%);
-	border-left: 4px solid #fc0254;
-	margin-bottom: 30px;
-	border-radius: 8px;
-	box-shadow: 0 4px 15px rgba(252, 2, 84, 0.2);
-	text-align: center;
-	animation: slideIn 0.5s ease-out;
-}
+	.clientes-section {
+		padding: 105px 0 140px;
+	}
+
+	.clientes-section .section-title {
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	.clientes-section .section-title h2 {
+		font-size: 60px;
+		color: #0a183d;
+		font-weight: 700;
+	}
+
+	.marquee {
+		position: relative;
+		overflow: hidden;
+		padding: 30px 0;
+		background: transparent;
+		border: none;
+		border-radius: 0;
+		-webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+		mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+	}
+
+	.marquee-track {
+		display: flex;
+		align-items: center;
+		gap: 80px;
+		width: max-content;
+		padding-right: 80px;
+		animation: rolar-logos 30s linear infinite;
+	}
+
+	.marquee-track img {
+		height: 55px;
+		width: auto;
+		opacity: 0.85;
+	}
+
+	@keyframes rolar-logos {
+		from { transform: translateX(0); }
+		to   { transform: translateX(-50%); }
+	}
+
+	.marquee:hover .marquee-track {
+		animation-play-state: paused;
+	}
+
+	@media (max-width: 768px) {
+		.clientes-section {
+			padding: 60px 0;
+		}
+
+		.clientes-section .section-title h2 {
+			font-size: 40px;
+		}
+
+		.marquee-track {
+			gap: 40px;
+			padding-right: 40px;
+		}
+
+		.marquee-track img {
+			height: 38px;
+		}
+	}
+
 .success-content h3 {
 	color: #fc0254;
 	font-size: 28px;
