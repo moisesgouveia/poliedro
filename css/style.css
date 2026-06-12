@@ -1658,6 +1658,19 @@ Responsive
 	.sub-list {
 		padding: 60px 15px 50px 30px;
 	}
+
+#preloader {
+	position: fixed;
+	inset: 0;
+	background: #08192d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99999;
+}
+#preloader-logo {
+	width: 160px;
+}
 	.sub-text {
 		margin-bottom: 50px;
 	}
