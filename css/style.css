@@ -687,12 +687,29 @@ Playlist page
 	text-align: center;
 	padding: 0 11px;
 	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
 }
 
 .playlist-item img {
 	min-width: 100%;
 	border-radius: 40px;
 	margin-bottom: 30px;
+	transition: transform 0.45s ease, filter 0.45s ease, opacity 0.45s ease;
+}
+
+.playlist-item:hover img {
+	transform: scale(1.08) translateY(-6px);
+	filter: brightness(1.05) saturate(1.08);
+}
+
+.playlist-item h5 {
+	transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.playlist-item:hover h5 {
+	transform: translateY(-6px);
+	color: #fc0254;
 }
 
 .search-form {
