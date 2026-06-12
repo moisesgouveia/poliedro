@@ -39,7 +39,7 @@ function showSuccessMessage() {
   messageDiv.className = 'success-message';
   messageDiv.innerHTML = `
     <div class="success-content">
-      <h3>✓ Cotação Solicitada</h3>
+      <h3>✓ Mensagem Enviada</h3>
       <p>Sua solicitação foi enviada com sucesso!</p>
       <p>Entraremos em contato em breve.</p>
     </div>
